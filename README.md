@@ -8,7 +8,7 @@
 ## require data
 ```javascript
 const base64 = require('base-64');
-const $$DEFINE MODEL USE$$=require("../modul/auth_model/reguster_model")
+const @@@theModel=require("../modul/auth_model/reguster_model")
 const bcrypt = require('bcrypt');
 ```
 ## implimentation 
@@ -27,7 +27,7 @@ module.exports=async (req,res,next)=>{
 
         try{
             //CHECK THE EMAIL IS CORRECT RO NOT
-            const user = await $$DEFINE MODEL USE$$.findOne({ where: { email: email } });
+            const user = await @@@theModel.findOne({ where: { email: email } });
             //CHECK IF PASSWORD FROM HEADER MATCH WITH  PASSWORD FROM DATABASE
             const valid = await bcrypt.compare(password, user.password);
             if(valid){
