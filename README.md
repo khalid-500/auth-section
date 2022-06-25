@@ -8,7 +8,7 @@
 ## require data
 ```javascript
 const base64 = require('base-64');
-const @@@theModel=require("../modul/auth_model/reguster_model")
+const .@@@theModel=require("../modul/auth_model/reguster_model")
 const bcrypt = require('bcrypt');
 ```
 ## implimentation 
